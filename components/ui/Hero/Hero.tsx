@@ -3,23 +3,23 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <section className="bg-green-100 py-16 px-8">
+    <section className="bg-primary py-16 px-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Left Content */}
-        <div className="flex-1 space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-green-900 leading-tight">
+        <div className="flex-1 space-y-6 md:mr-12">
+          <h1 className="text-2xl md:text-3xl font-bold text-background leading-tight">
             Growing Future Leaders Through Climate - Smart Education
           </h1>
-          <p className="text-lg text-gray-700 max-w-xl">
+          <p className="text-lg text-background max-w-xl">
             Our Programs focuses on three pillar of impact empowering schools,
             teachers and Students to lead the movement for Food - Energy - Water
             security.
           </p>
           <div className="flex gap-4">
-            <button className="bg-green-600 text-white px-6 py-3 rounded-md shadow hover:bg-green-700 transition">
+            <button className="bg-secondary text-foreground px-6 py-3 rounded-lg shadow hover:bg-secondary/70 font-bold">
               Get involved
             </button>
-            <button className="bg-white border border-green-600 text-green-600 px-6 py-3 rounded-md shadow hover:bg-green-50 transition">
+            <button className="border-2 border-secondary text-background px-6 py-3 rounded-lg shadow transition font-bold">
               Sign up
             </button>
           </div>
@@ -28,7 +28,7 @@ export default function Hero() {
         {/* Right Image */}
         <div className="flex-1 flex justify-center">
           <Image
-            src="/logo.jpg"
+            src="/Rectangle 90.png"
             alt="Hero Image"
             width={600}
             height={400}

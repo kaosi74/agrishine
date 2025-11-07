@@ -26,16 +26,15 @@ export default function Navbar() {
     <header className="bg-white text-black sticky top-0 w-full z-50 shadow-md">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center">
           <Image
-            src="/logo.jpg"
+            src="/logo.png"
             alt="Logo"
-            width={40}
-            height={40}
+            width={100}
+            height={100}
             priority
             className="rounded"
           />
-          <span className="font-bold text-primary">IHMCARE</span>
         </Link>
 
         {/* Hamburger button (mobile) */}
@@ -87,18 +86,22 @@ export default function Navbar() {
         >
           {navItems.map(({ title, url }) => {
             const isActive = url === pathname;
+            const isLogin = title === "Login";
+
             return (
               <li key={url} className="md:my-0 my-2">
                 <Link
                   href={url}
                   className={`
-                    block px-4 py-2 rounded-md font-medium transition duration-400 ease-in-out
-                    ${
-                      isActive
-                        ? "bg-secondary text-surface"
-                        : "text-primary hover:text-secondary hover:bg-primary/10"
-                    }
-                  `}
+          block px-4 py-2 rounded-md font-medium transition duration-400 ease-in-out
+          ${
+            isLogin
+              ? "bg-primary text-background"
+              : isActive
+              ? "text-red-300"
+              : "text-[var(--color-foreground)] hover:text-[var(--color-foreground)] hover:bg-[var(--color-surface)]"
+          }
+        `}
                   onClick={() => setIsOpen(false)}
                 >
                   {title}

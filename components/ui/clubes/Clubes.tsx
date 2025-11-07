@@ -4,15 +4,15 @@ import Image from "next/image";
 
 export default function Clubes() {
   return (
-    <section className="bg-green-50 py-16 px-6 text-center">
+    <section className="py-16 px-6 text-center">
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-4">
+      <h2 className="font-bold text-3xl my-8">
         AGRISHINE CLUBS (Eco and Agrivoltic Clubs)
       </h2>
 
       {/* Intro Text */}
       <div className="max-w-2xl mx-auto mb-12 space-y-2">
-        <p className="text-lg text-gray-700">
+        <p className="text-lg font-bold">
           Cultivating leadership through participation
         </p>
         <p className="text-gray-600">
@@ -22,39 +22,42 @@ export default function Clubes() {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+      <div className="flex md:flex-row justify-center items-center gap-x-42 mx-auto mb-12">
         {/* Eco Clubs Card */}
-        <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
-          <Image
-            src="/logo.jpg"
-            width={200}
-            height={150}
-            alt="Eco Clubs"
-            className="rounded-md mb-4"
-          />
+        <div className="w-80 bg-white shadow-lg rounded-lg flex flex-col items-center">
+          <div className="relative w-full h-64 rounded-md mb-4">
+            <Image
+              src="/61d603fd420e83ccbdab80288c3471da 1.png"
+              alt="Eco Clubs"
+              fill
+              className="object-cover rounded-md"
+              priority
+            />
+          </div>
           <p className="text-green-700 font-semibold">
             Eco Clubs (Primary & JSS)
           </p>
-          <h3 className="text-gray-700 mt-2">
+          <h3 className="text-gray-700 mt-2 mb-6">
             Focus on recycling, planting, and conservation.
           </h3>
         </div>
 
         {/* Agrivoltaic Clubs Card */}
-        <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
-          <Image
-            src="/logo.jpg"
-            width={200}
-            height={150}
-            alt="Agrivoltaic Clubs"
-            className="rounded-md mb-4"
-          />
+        <div className="w-80 bg-white shadow-lg rounded-lg flex flex-col items-center">
+          <div className="relative w-full h-64 rounded-md mb-4">
+            <Image
+              src="/d7262b67d2c768a8a40014a337f6a6cf 1.png"
+              alt="Eco Clubs"
+              fill
+              className="object-cover rounded-md"
+              priority
+            />
+          </div>
           <p className="text-green-700 font-semibold">
-            Agrivoltaic Clubs (SSS)
+            Eco Clubs (Primary & JSS)
           </p>
-          <h3 className="text-gray-700 mt-2">
-            Engage in smart farming, renewable energy projects, and
-            competitions.
+          <h3 className="text-gray-700 mt-2 mb-6">
+            Focus on recycling, planting, and conservation.
           </h3>
         </div>
       </div>
