@@ -27,7 +27,7 @@ export default function Climate() {
         {/* Eco Clubs Card */}
         <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
           <Image
-            src="/logo.jpg"
+            src="/logo.png"
             width={200}
             height={150}
             alt="Eco Clubs"
@@ -44,7 +44,7 @@ export default function Climate() {
         {/* Agrivoltaic Clubs Card */}
         <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
           <Image
-            src="/logo.jpg"
+            src="/logo.png"
             width={200}
             height={150}
             alt="Agrivoltaic Clubs"
@@ -61,7 +61,7 @@ export default function Climate() {
 
         <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
           <Image
-            src="/logo.jpg"
+            src="/logo.png"
             width={200}
             height={150}
             alt="Agrivoltaic Clubs"
