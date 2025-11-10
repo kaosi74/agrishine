@@ -4,15 +4,15 @@ import Image from "next/image"
 
 export default function Climate() {
   return (
-    <section className="bg-green-50 py-16 px-6 text-center">
+    <section className="py-16 px-6 text-center">
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-4">
+      <h2 className="font-bold text-3xl my-8">
         CLIMATE - SMART LEARNING MATERIALS
       </h2>
 
       {/* Intro Text */}
       <div className="max-w-2xl mx-auto mb-12 space-y-2">
-        <p className="text-lg text-gray-700">
+        <p className="text-lg font-bold">
           Building knowledge through stories, science, and creativity
         </p>
         <p className="text-gray-600">

@@ -18,22 +18,24 @@ export default function TeacherClimateAcademy() {
           width={500}
           height={500}
           alt="logo"
+          className="max-w-full h-auto"
         />
-        <div className="grid grid-cols-2 gap-14 px-12">
-          <div className="w-54 px-4 rounded-xl py-4 shadow-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 w-full max-w-md md:max-w-none">
+          <div className="px-4 rounded-xl py-4 shadow-sm">
             <p>Climate-smart farming and agrivoltaic literacy</p>
           </div>
-          <div className="w-54 px-4 rounded-xl py-4 shadow-sm">
+          <div className="px-4 rounded-xl py-4 shadow-sm">
             <p>Values of community, teamwork, and environmental ethics</p>
           </div>
-          <div className="w-54 px-4 rounded-xl py-4 shadow-sm">
+          <div className="px-4 rounded-xl py-4 shadow-sm">
             <p>Lesson integration with national curriculum (NERDC/WAEC)</p>
           </div>
-          <div className="w-54 px-4 rounded-xl py-4 shadow-sm">
+          <div className="px-4 rounded-xl py-4 shadow-sm">
             <p>Hands-on sustainability teaching methods</p>
           </div>
         </div>
       </div>
+
       <div>
         <p className="text-lg">
           Graduates receive recognition as AgriShine Certified Educators.

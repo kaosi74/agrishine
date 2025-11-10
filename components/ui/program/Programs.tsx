@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Programs() {
   return (
     <section className="text-center px-22 py-8 leading-7">
-      <div className="flex flex-row justify-center items-center mb-8 mt-6 gap-x-2">
-        <h2 className="font-bold text-3xl my-6">OUR PROGRAMS</h2>
+      <div className="flex flex-col md:flex-row justify-center items-center mb-8 mt-6 gap-x-2">
+        <h2 className="font-bold text-lg md:text-3xl my-6">OUR PROGRAMS</h2>
         <p className="text-md"> - What we Do</p>
       </div>
       <div>
@@ -34,7 +34,7 @@ export default function Programs() {
         </p>
         <p className="font-bold text-lg my-12">Each hub includes:</p>
       </div>
-      <div className="flex flex-row gap-x-22 justify-center mt-12">
+      <div className="flex flex-col md:flex-row gap-y-6 md:gap-y-0 md:gap-x-22 justify-center mt-12">
         <Image
           src="/7ad60ba4a7d7932c59df119436166a5c (1) 1.png"
           width={400}

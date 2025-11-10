@@ -22,9 +22,9 @@ export default function Clubes() {
       </div>
 
       {/* Cards */}
-      <div className="flex md:flex-row justify-center items-center gap-x-42 mx-auto mb-12">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8 mx-auto mb-12 w-full max-w-5xl">
         {/* Eco Clubs Card */}
-        <div className="w-80 bg-white shadow-lg rounded-lg flex flex-col items-center">
+        <div className="w-full md:w-80 bg-white shadow-lg rounded-lg flex flex-col items-center">
           <div className="relative w-full h-64 rounded-md mb-4">
             <Image
               src="/61d603fd420e83ccbdab80288c3471da 1.png"
@@ -43,21 +43,21 @@ export default function Clubes() {
         </div>
 
         {/* Agrivoltaic Clubs Card */}
-        <div className="w-80 bg-white shadow-lg rounded-lg flex flex-col items-center">
+        <div className="w-full md:w-80 bg-white shadow-lg rounded-lg flex flex-col items-center">
           <div className="relative w-full h-64 rounded-md mb-4">
             <Image
               src="/d7262b67d2c768a8a40014a337f6a6cf 1.png"
-              alt="Eco Clubs"
+              alt="Agrivoltaic Clubs"
               fill
               className="object-cover rounded-md"
               priority
             />
           </div>
           <p className="text-green-700 font-semibold">
-            Eco Clubs (Primary & JSS)
+            Agrivoltaic Clubs (SSS)
           </p>
           <h3 className="text-gray-700 mt-2 mb-6">
-            Focus on recycling, planting, and conservation.
+            Focus on solar energy, farming innovation, and sustainability.
           </h3>
         </div>
       </div>
