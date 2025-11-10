@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 import Aos from "aos";
-import Image from "next/image"
+import Image from "next/image";
 import { useEffect } from "react";
 
-export default function Climate() {
+export default function StudentInnovation() {
   useEffect(() => {
       Aos.init({
         duration: 2300,
@@ -16,7 +16,7 @@ export default function Climate() {
     <section className="py-16 px-6 text-center">
       {/* Heading */}
       <h2 className="font-bold text-3xl my-8" data-aos="fade-up">
-        CLIMATE - SMART LEARNING MATERIALS
+        STUDENTS COMPETITION AND INNOVATION CHALLENGE
       </h2>
 
       {/* Intro Text */}
@@ -26,12 +26,11 @@ export default function Climate() {
         data-aos-delay="200"
       >
         <h3 className="text-lg font-bold">
-          Building knowledge through stories, science, and creativity
+          Inspiring the next generation of problem solvers.
         </h3>
         <p className="text-surface">
-          AgriShine develops textbooks, storybooks, and activity guides that
-          integrate sustainability into everyday subjects. Key publications
-          include:
+          Every year, AgriShine organizes student contests that combine
+          creativity, science, and teamwork:
         </p>
       </div>
 
@@ -44,17 +43,17 @@ export default function Climate() {
           data-aos-delay="400"
         >
           <Image
-            src="/Rectangle_3.png"
+            src="/Rectangle_4.png"
             width={800}
-            height={200}
+            height={400}
             alt="Eco Clubs"
-            className="rounded-md mb-4"
+            className="rounded-md mb-4 w-full h-auto"
           />
           <p className="text-primary font-semibold">
-            Climate-Smart Agriculture Series (Primary–SSS)
+            Eco-Art & Essay Competitions
           </p>
           <p className="text-surface mt-2">
-            Focus on recycling, planting, and conservation.
+            Merging creativity with environmental awareness
           </p>
         </div>
 
@@ -65,42 +64,51 @@ export default function Climate() {
           data-aos-delay="600"
         >
           <Image
-            src="/Rectangle_2.png"
-            width={500}
-            height={200}
+            src="/Rectangle_5.png"
+            width={800}
+            height={400}
             alt="Agrivoltaic Clubs"
-            className="rounded-md mb-4"
+            className="rounded-md mb-4 w-full h-auto"
           />
-          <p className="text-primary font-semibold">Agrivoltaic Clubs (SSS)</p>
+          <p className="text-primary font-semibold">
+            Solar-Innovation Bootcamp
+          </p>
           <p className="text-surface mt-2">
-            Engage in smart farming, renewable energy projects, and
-            competitions.
+            For young inventors designing renewable solutions
           </p>
         </div>
 
-        {/* Third Card */}
+        {/* Green School Challenge Card */}
         <div
           className="bg-white shadow-lg rounded-lg pb-6 flex flex-col items-center"
           data-aos="zoom-in"
           data-aos-delay="800"
         >
           <Image
-            src="/Rectangle_1.png"
-            width={500}
+            src="/Rectangle_6.png"
+            width={800}
             height={400}
             alt="Agrivoltaic Clubs"
-            className="rounded-md mb-4"
+            className="rounded-md mb-4 w-full h-auto"
           />
-          <p className="text-primary font-semibold">Agrivoltaic Clubs (SSS)</p>
+          <p className="text-primary font-semibold">Green School Challenge</p>
           <p className="text-surface mt-2">
-            Engage in smart farming, renewable energy projects, and
-            competitions.
+            Nationwide inter-school sustainability contest
           </p>
         </div>
       </div>
 
+      <p
+        className="text-surface mb-10"
+        data-aos="fade-up"
+        data-aos-delay="1000"
+      >
+        These activities nurture critical thinking, leadership, and innovation
+        for a climate-smart generation.
+      </p>
+
       {/* Call to Action Button */}
-      <div data-aos="fade-up" data-aos-delay="1000">
+      <div data-aos="fade-up" data-aos-delay="1200">
         <button className="bg-primary text-white px-8 py-3 rounded-md shadow hover:bg-primary/90 transition-transform duration-500 ease-in-out hover:scale-105">
           Start a Club in your School
         </button>

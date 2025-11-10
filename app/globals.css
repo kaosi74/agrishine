@@ -6,7 +6,7 @@
   --foreground: #171717;
   --primary: #4CAF50;
   --secondary: #FECF2F;
-  --surface: #f5f5f5; /* neutral surface for cards/panels */
+  --surface: #8a8a8a; /* neutral surface for cards/panels */
 }
 
 /* Tailwind theme variables */
