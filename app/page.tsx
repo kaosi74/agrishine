@@ -1,8 +1,6 @@
-import Home from '@/components/ui/Home/Home'
-import React from 'react'
+import Home from "@/components/ui/Home/HomeComponent/Home";
+import React from "react";
 
 export default function page() {
-  return (
-    <Home />
-  )
+  return <Home />;
 }

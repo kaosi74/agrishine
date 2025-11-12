@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-gray-100 text-gray-800">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Quicklinks */}
         <div>
           <h3 className="font-bold mb-4">QUICKLINKS</h3>
@@ -43,35 +43,9 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div>
-          <h3 className="font-bold mb-4">CONTACT US</h3>
-          <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Name"
-              className="w-full border rounded-lg px-3 py-2"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full border rounded-lg px-3 py-2"
-            />
-            <textarea
-              placeholder="Message"
-              rows={3}
-              className="w-full border rounded-lg px-3 py-2"
-            />
-            <button
-              type="submit"
-              className="w-full bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700 transition"
-            >
-              Submit
-            </button>
-          </form>
-        </div>
       </div>
 
-      <div className="border-t border-gray-300 py-4 text-center text-sm text-gray-600">
+      <div className="border-t border-gray-300 py-4 text-center text-sm text-surface">
         © ignite 2023. All Copyright Reserved
       </div>
     </footer>
