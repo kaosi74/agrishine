@@ -11,6 +11,8 @@ interface HeroProps {
   imageSrc: string;
   imageAlt?: string;
   bgColor?: string;
+  textHeading?: string;
+  textContent?: string;
 }
 
 export default function Hero({
@@ -21,6 +23,8 @@ export default function Hero({
   imageSrc,
   imageAlt = "Hero Image",
   bgColor = "bg-primary",
+  textHeading = "text-background",
+  textContent = "text-surface",
 }: HeroProps) {
   useEffect(() => {
     Aos.init({
@@ -39,10 +43,10 @@ export default function Hero({
           className="flex-1 space-y-4 sm:space-y-6 md:mr-12 text-center md:text-left"
           data-aos="zoom-in"
         >
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-background leading-tight">
+          <h1 className={`${textHeading} text-xl sm:text-2xl md:text-3xl font-bold text-background leading-tight`}>
             {title}
           </h1>
-          <p className="text-base sm:text-lg text-background max-w-xl mx-auto md:mx-0">
+          <p className={`${textContent} text-base sm:text-lg text-background max-w-xl mx-auto md:mx-0`}>
             {description}
           </p>
           <div

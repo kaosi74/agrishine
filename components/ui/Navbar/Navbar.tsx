@@ -78,8 +78,8 @@ export default function Navbar() {
         {/* Menu Items */}
         <ul
           className={`
-            absolute top-full inset-x-0 bg-surface border-t border-foreground/30
-            transition-max-h duration-400 ease-in-out overflow-hidden
+            absolute top-full inset-x-0 bg-white border-t border-foreground/30
+            transition-max-h duration-[800ms] ease-in-out overflow-hidden
             ${isOpen ? "max-h-75" : "max-h-0"}
             md:static md:max-h-full md:flex md:space-x-6 md:border-0 md:bg-transparent md:overflow-visible
           `}
@@ -93,13 +93,13 @@ export default function Navbar() {
                 <Link
                   href={url}
                   className={`
-          block px-4 py-2 rounded-md font-medium transition duration-400 ease-in-out
+          block px-4 py-2 rounded-md font-medium transition duration-400 ease-in-out 
           ${
             isLogin
-              ? "bg-primary text-background"
+              ? "bg-primary text-background duration-400 ease-in-out transition-all transform hover:scale-105 "
               : isActive
               ? "text-red-300"
-              : "text-[var(--color-foreground)] hover:text-[var(--color-foreground)] hover:bg-[var(--color-surface)]"
+              : "text-foreground hover:bg-secondary duration-400 ease-in-out transition-all transform hover:scale-105"
           }
         `}
                   onClick={() => setIsOpen(false)}

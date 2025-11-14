@@ -6,6 +6,8 @@ interface HeroProps {
   imageSrc: string;
   imageAlt?: string;
   bgColor?: string;
+  textHeading?: string;
+  textContent?: string;
 }
 
 export const hero: HeroProps = {
@@ -16,6 +18,7 @@ export const hero: HeroProps = {
   secondaryButtonLabel: "Sign up",
   imageSrc: "/Rectangle_90.png",
   bgColor: "bg-primary",
+  textHeading: "text-background",
 };
 
 export const aboutHero: HeroProps = {
@@ -23,4 +26,7 @@ export const aboutHero: HeroProps = {
   title: "Our Philosophy: Lichipu – “Let’s Do It Together",
   description:
     "At the core of AgriShine is the Lichipu philosophy, meaning “Let’s do it together.” We believe that lasting change happens when students, teachers, and communities learn and act collectively. In every AgriShine school, collaboration is the root of growth — from shared gardens to joint projects and inter-school exchanges Through this approach, classrooms become living laboratories, where every child learns to grow food, conserve water, harness clean energy, and build a more sustainable future.",
+    bgColor: "bg-white",
+    textHeading: "text-black",
+    textContent: "text-surface",
 };
